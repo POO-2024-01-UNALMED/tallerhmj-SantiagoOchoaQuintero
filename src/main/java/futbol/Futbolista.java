@@ -21,7 +21,7 @@ public abstract class Futbolista implements Comparable<Futbolista> {
     // Método toString para imprimir la información del futbolista
     @Override
     public String toString() {
-        return "El futbolista " + nombre + " tiene " + edad + " años, y juega de " + posicion + ".";
+        return "El futbolista " + nombre + " tiene " + edad + " anos, y juega de " + posicion + ".";
     }
 
     // Método equals para comparar dos objetos Futbolista

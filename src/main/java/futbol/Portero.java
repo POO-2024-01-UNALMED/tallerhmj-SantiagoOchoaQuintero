@@ -14,7 +14,7 @@ public class Portero extends Futbolista {
 
     // Método toString para imprimir la información del portero
     public String toString() {
-        return "El futbolista " + getNombre() + " tiene " + getEdad() + " años, y juega de " +
+        return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " +
             getPosicion() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos + " goles.";
     }
 
