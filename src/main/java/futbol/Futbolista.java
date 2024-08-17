@@ -1,3 +1,5 @@
+package futbol;
+
 public abstract class Futbolista implements Comparable<Futbolista> {
     // Atributos privados
     private String nombre;

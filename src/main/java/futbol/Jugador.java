@@ -1,3 +1,5 @@
+package futbol;
+
 public class Jugador extends Futbolista {
     // Atributos públicos
     public short golesMarcados;

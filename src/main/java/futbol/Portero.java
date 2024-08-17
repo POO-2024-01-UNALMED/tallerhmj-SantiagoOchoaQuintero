@@ -1,3 +1,5 @@
+package futbol;
+
 public class Portero extends Futbolista {
     // Atributos públicos
     public short golesRecibidos;
