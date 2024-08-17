@@ -1,7 +1,7 @@
 package futbol;
 
 public class Portero extends Futbolista {
-    // Atributos públicos
+    // Atributos publicos
     public short golesRecibidos;
     public byte dorsal;
 
@@ -12,18 +12,18 @@ public class Portero extends Futbolista {
         this.dorsal = dorsal;
     }
 
-    // Método toString para imprimir la información del portero
+    // Metodo toString para imprimir la informacion del portero
     public String toString() {
         return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " +
             getPosicion() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos + " goles.";
     }
 
-    // Implementación del método abstracto jugarConLasManos
+    // Implementación del metodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
         return true;  // Un portero siempre puede jugar con las manos
     }
 
-    // Implementación del método compareTo de la interfaz Comparables
+    // Implementacion del metodo compareTo de la interfaz Comparables
     public int compareTo(Futbolista otro) {
         if (otro instanceof Portero) {
             Portero otroPortero = (Portero) otro;

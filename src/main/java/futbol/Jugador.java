@@ -1,7 +1,7 @@
 package futbol;
 
 public class Jugador extends Futbolista {
-    // Atributos públicos
+    // Atributos publicos
     public short golesMarcados;
     public byte dorsal;
 
@@ -19,18 +19,18 @@ public class Jugador extends Futbolista {
         this.dorsal = 7;
     }
 
-    // Método toString para imprimir la información del jugador
+    // Metodo toString para imprimir la informacion del jugador
     public String toString() {
         return "El futbolista " + getNombre() + " tiene " + getEdad() + " anos, y juega de " +
                getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados + " goles.";
     }
 
-    // Implementación del método compareTo de la interfaz Comparable
+    // Implementación del metodo compareTo de la interfaz Comparable
     public int compareTo(Futbolista otro) {
         return Math.abs(this.getEdad() - otro.getEdad());
     }
 
-    // Implementación del método abstracto jugarConLasManos
+    // Implementación del mestodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
         return false;  // Un jugador normal no puede jugar con las manos
     }
