@@ -25,12 +25,12 @@ public class Jugador extends Futbolista {
                getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados + " goles.";
     }
 
-    // Implementación del metodo compareTo de la interfaz Comparable
+    // Implementacion del metodo compareTo de la interfaz Comparable
     public int compareTo(Futbolista otro) {
         return Math.abs(this.getEdad() - otro.getEdad());
     }
 
-    // Implementación del mestodo abstracto jugarConLasManos
+    // Implementacion del mestodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
         return false;  // Un jugador normal no puede jugar con las manos
     }
