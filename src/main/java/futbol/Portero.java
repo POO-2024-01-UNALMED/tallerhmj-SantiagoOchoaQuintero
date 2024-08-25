@@ -20,17 +20,13 @@ public class Portero extends Futbolista {
 
     // Implementación del metodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
-        return true;  // Un portero siempre puede jugar con las manos
+        return true; 
     }
 
     // Implementacion del metodo compareTo de la interfaz Comparables
-    public int compareTo(Futbolista otro) {
-        if (otro instanceof Portero) {
-            Portero otroPortero = (Portero) otro;
-            return Math.abs(this.golesRecibidos - otroPortero.golesRecibidos);
-        } else {
-            throw new IllegalArgumentException("El objeto comparado no es un Portero");
-        }
+    public int compareTo(Portero otro) {
+            return Math.abs(this.golesRecibidos - otro.golesRecibidos);
+         
     }
 }
 

@@ -7,14 +7,14 @@ public class Jugador extends Futbolista {
 
     // Constructor que inicializa todos los atributos
     public Jugador(String nombre, int edad, String posicion, short golesMarcados, byte dorsal) {
-        super(nombre, edad, posicion);  // Llama al constructor de la clase padre
+        super(nombre, edad, posicion);
         this.golesMarcados = golesMarcados;
         this.dorsal = dorsal;
     }
 
     // Constructor por defecto
     public Jugador() {
-        super("Jugador Default", 30, "Delantero");  // Llama al constructor de la clase padre con valores por defecto
+        super();  // Llama al constructor de la clase padre con valores por defecto
         this.golesMarcados = 289;
         this.dorsal = 7;
     }
@@ -32,6 +32,6 @@ public class Jugador extends Futbolista {
 
     // Implementacion del mestodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
-        return false;  // Un jugador normal no puede jugar con las manos
+        return false; 
     }
 }

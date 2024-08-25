@@ -24,12 +24,26 @@ public abstract class Futbolista implements Comparable<Futbolista> {
     }
 
     // Metodo equals para comparar dos objetos Futbolista
-    public boolean equals(Futbolista f) {
-        if (this == f) return true;
-        if (f == null) return false;
-        return this.nombre.equals(f.nombre) && this.edad == f.edad && this.posicion.equals(f.posicion);
+    // public boolean equals(Futbolista f) {
+    //     if (this == f) return true;
+    //     if (f == null) return false;
+    //     return this.nombre.equals(f.nombre) && this.edad == f.edad && this.posicion.equals(f.posicion);
+    // }
+    // // Implementacion de la interfaz Comparable psara comparar por edads
+    // public int compareTo(Futbolista otro) {
+    //     return Integer.compare(this.edad, otro.edad);
+    // }
+    public int compareTo(Futbolista other){
+        return Integer.compare(this.edad, other.edad);
     }
-
+    public boolean equals(Futbolista f){
+        if(this.compareTo(f) > 1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
     // Metodo abstracto jugarConLasManos
     public abstract boolean jugarConLasManos();
 
@@ -52,10 +66,5 @@ public abstract class Futbolista implements Comparable<Futbolista> {
 
     public String getPosicion() {
         return posicion;
-    }
-
-    // Implementacion de la interfaz Comparable para comparar por edads
-    public int compareTo(Futbolista otro) {
-        return Integer.compare(this.edad, otro.edad);
     }
 }
