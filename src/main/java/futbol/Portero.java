@@ -18,15 +18,20 @@ public class Portero extends Futbolista {
             getPosicion() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos + " goles.";
     }
 
-    // Implementación del metodo abstracto jugarConLasManos
+    // Implementacion del metodo abstracto jugarConLasManos
     public boolean jugarConLasManos() {
         return true; 
     }
 
     // Implementacion del metodo compareTo de la interfaz Comparables
-    public int compareTo(Portero otro) {
-            return Math.abs(this.golesRecibidos - otro.golesRecibidos);
-         
+    public int compareTo(Futbolista otro) {
+        if(otro instanceof Portero){
+            Portero oPortero = (Portero) otro;
+            return Math.abs(this.golesRecibidos - oPortero.golesRecibidos);
+        }
+        else{
+            return 0;
+        }
     }
 }
 
